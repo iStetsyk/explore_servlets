@@ -16,7 +16,7 @@ public class TemplateServlet extends HttpServlet {
         PrintWriter out = resp.getWriter();
         out.println("<html>");
         out.println("<head><title>Szablon</title></head>");
-        out.println("</body>");
+        out.println("<body>");
 
         req.getServletContext().getNamedDispatcher("JspHeaderServlet").include(req, resp);
 
