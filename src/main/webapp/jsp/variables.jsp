@@ -10,7 +10,7 @@ int a = -100 + new Random().nextInt(201);
 int b = -100 + new Random().nextInt(201);
 int c = -100 + new Random().nextInt(201);
 %>
-<h1>Oblicznia matematyczne</h1>
+<h1>Obliczenia matematyczne</h1>
 <div>
     <h2>Zmienne</h2>
     <p>a = <%= a%></p>

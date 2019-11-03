@@ -3,5 +3,15 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>HeaderServlet</servlet-name>
+    <servlet-class>pl.hit.servlets.jsp.HeaderServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>FooterServlet</servlet-name>
+    <servlet-class>pl.hit.servlets.jsp.FooterServlet</servlet-class>
+  </servlet>
+
 </web-app>
