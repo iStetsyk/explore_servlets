@@ -11,25 +11,19 @@
 <%  Integer number = -10 + new Random().nextInt(21); %>
     <h1>Treść dynamiczna</h1>
 <div>
+<p>Wylosowana liczba: <%= number %> </p>
 <%
-    out.println("<p>Wylosowana liczba: " + number + "</p>");
-
-    if(number % 2 == 0) {
-        out.println("Liczba jest parzysta");
-    } else {
-        out.println("Liczba nie jest parzysta");
-    }
-%>
+    if(number % 2 == 0) { %>
+    <p>Liczba jest parzysta</p>
+    <% } else { %>
+        <p>Liczba nie jest parzysta</p>
+ <% } %>
 </div>
 <div>
-    <%
-        out.println("<p>Teraz jest: " + LocalDateTime.now() + "</p>");
-    %>
+  <p>Teraz jest: <%= LocalDateTime.now() %></p>
 </div>
 <div>
-    <%
-       out.println("<p>Mamy rok:" + LocalDate.now().getYear() + "</p>";
-    %>
+    <p>Mamy rok: <%= LocalDate.now().getYear() %></p>
 </div>
 </body>
 </html>
